@@ -3,8 +3,11 @@
 <head>
     <title>Student</title>
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+
 </head>
 <body>
     <h1>This is the page for the student with id {{ id_number }}.</h1>
+    <h2> hi {{ student.name }} , Your were born in {{ student.year }} , lab status : {{ student.finished_lab }} </h2>
+	<a href="{{ url_for('home') }}"> Back to home </a>
 </body>
 </html>
